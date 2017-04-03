@@ -1,0 +1,64 @@
+package fr.imie;
+
+import fr.imie.business.AcademicBusiness;
+import fr.imie.business.IAcademicBusiness;
+import fr.imie.model.AdresseDTO;
+import fr.imie.model.EtablissementDTO;
+
+/**
+ * @author imiedev
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		IAcademicBusiness academicBusiness = new AcademicBusiness();
+
+		AdresseDTO adresseDTO = new AdresseDTO();
+		adresseDTO.initDTO(10, "rue Jules Ferry", "44620", "LA MONTAGNE");
+		
+		EtablissementDTO etablissementDTO = new EtablissementDTO();
+		etablissementDTO.initDTO("Jules FERRY", adresseDTO);
+		
+		System.out.println("INSERT -------------------");
+		//INSERT 
+		academicBusiness.createEtablissement(etablissementDTO);
+
+		System.out.println("SELECT -------------------");
+		//SELECT 
+		for (EtablissementDTO etablissementDTO1 : academicBusiness.listAllEtablissement()) {
+			System.out.format("nom:%s\n", etablissementDTO1.getNom());
+			System.out.format("adresse:%s\n", etablissementDTO1.getAdresse().getMergedAdress());
+		}
+		
+		System.out.println("SUPPRIMER -------------------");
+		//SUPPRIMER
+		EtablissementDTO etablissementDTO2 = new EtablissementDTO();
+		etablissementDTO2.initDTO("Jules FERRY", adresseDTO);
+		academicBusiness.deleteEtablissement(etablissementDTO2);
+		
+		
+		System.out.println("SELECT -------------------");
+		//SELECT 
+		for (EtablissementDTO etablissementDTO1 : academicBusiness.listAllEtablissement()) {
+			System.out.format("nom:%s\n", etablissementDTO1.getNom());
+			System.out.format("adresse:%s\n", etablissementDTO1.getAdresse().getMergedAdress());
+		}
+
+		System.out.println("MODIF -------------------");
+		//
+		//MODIFIER
+		AdresseDTO adresseDTO2 = new AdresseDTO();
+		adresseDTO2.setCP("44444");
+		EtablissementDTO etablissementDTO3 = new EtablissementDTO();
+		etablissementDTO3.setNom("ENI Saint Herblain");
+		academicBusiness.modifyEtablissement(etablissementDTO3);
+	
+
+	}
+
+}

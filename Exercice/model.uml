@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_4qH6YBUsEee-v-VHdBZc9g" name="NewModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_a5yBoBUtEee-v-VHdBZc9g" name="Employe">
+    <ownedAttribute xmi:id="_igt90BUtEee-v-VHdBZc9g" name="nom" visibility="private"/>
+    <ownedAttribute xmi:id="_uiyokBUtEee-v-VHdBZc9g" name="prenom" visibility="private"/>
+    <ownedAttribute xmi:id="_yt-2oBUtEee-v-VHdBZc9g" name="salaire" visibility="private"/>
+    <ownedAttribute xmi:id="_C0hcYBUuEee-v-VHdBZc9g" name="adresse" visibility="private"/>
+    <ownedAttribute xmi:id="_O9pxYBUuEee-v-VHdBZc9g" name="telephone" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SyptABUuEee-v-VHdBZc9g" name="Mission">
+    <ownedAttribute xmi:id="_6UsT4BUuEee-v-VHdBZc9g" name="date_debut" visibility="private"/>
+    <ownedAttribute xmi:id="_8XrfUBUuEee-v-VHdBZc9g" name="date_fin" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YRAMEBUuEee-v-VHdBZc9g" name="Formation">
+    <ownedAttribute xmi:id="_CkaHUBUvEee-v-VHdBZc9g" name="theme" visibility="private"/>
+    <ownedAttribute xmi:id="_F3HOMBUvEee-v-VHdBZc9g" name="nbre_jours" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_b2ItcBUzEee-v-VHdBZc9g" memberEnd="_b2ItcRUzEee-v-VHdBZc9g _b2ItdBUzEee-v-VHdBZc9g" navigableOwnedEnd="_b2ItcRUzEee-v-VHdBZc9g _b2ItdBUzEee-v-VHdBZc9g">
+    <ownedEnd xmi:id="_b2ItcRUzEee-v-VHdBZc9g" name="employés" type="_a5yBoBUtEee-v-VHdBZc9g" association="_b2ItcBUzEee-v-VHdBZc9g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b2ItchUzEee-v-VHdBZc9g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b2ItcxUzEee-v-VHdBZc9g" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_b2ItdBUzEee-v-VHdBZc9g" name="missions" type="_SyptABUuEee-v-VHdBZc9g" association="_b2ItcBUzEee-v-VHdBZc9g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b2ItdRUzEee-v-VHdBZc9g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b2ItdhUzEee-v-VHdBZc9g" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dSFHABUzEee-v-VHdBZc9g" memberEnd="_dSGVIBUzEee-v-VHdBZc9g _dSKmkBUzEee-v-VHdBZc9g" navigableOwnedEnd="_dSKmkBUzEee-v-VHdBZc9g">
+    <ownedEnd xmi:id="_dSGVIBUzEee-v-VHdBZc9g" name="employés" type="_a5yBoBUtEee-v-VHdBZc9g" association="_dSFHABUzEee-v-VHdBZc9g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dSIxYBUzEee-v-VHdBZc9g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dSIxYRUzEee-v-VHdBZc9g" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_dSKmkBUzEee-v-VHdBZc9g" name="formations" type="_YRAMEBUuEee-v-VHdBZc9g" association="_dSFHABUzEee-v-VHdBZc9g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dSNC0BUzEee-v-VHdBZc9g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dSNp4BUzEee-v-VHdBZc9g" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

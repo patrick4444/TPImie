@@ -1,0 +1,44 @@
+import java.util.Date;
+import java.util.HashSet;
+
+
+/**
+ * Description of Mission.
+ * 
+ * @author imiedev
+ */
+public class Mission {
+
+	private Date date_fin ;
+	private Date date_debut ;
+	
+	public HashSet<Employe> employés = new HashSet<Employe>();
+
+	/**
+	 * The constructor.
+	 */
+	public Mission() {
+		super();
+	}
+
+	public Object getDate_fin() {
+		return this.date_fin;
+	}
+
+	public void setDate_fin(Object newDate_fin) {
+		this.date_fin = date_fin;
+	}
+
+	public Object getDate_debut() {
+		return this.date_debut;
+	}
+
+	public void setDate_debut(Object newDate_debut) {
+		this.date_debut = date_debut;
+	}
+
+	public HashSet<Employe> getEmployes() {
+		return this.employes;
+	}
+
+}

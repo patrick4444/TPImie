@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename source folder &apos;AppliSpring/src&apos; to &apos;fr.imie.cours&apos;&#x0A;- Original project: &apos;AppliSpring&apos;&#x0A;- Original element: &apos;AppliSpring/src&apos;&#x0A;- Renamed element: &apos;src&apos;" description="Rename source folder &apos;src&apos;" id="org.eclipse.jdt.ui.rename.source.folder" input="/src" name="fr.imie.cours" stamp="1487336826564" version="1.0"/>
+</session>

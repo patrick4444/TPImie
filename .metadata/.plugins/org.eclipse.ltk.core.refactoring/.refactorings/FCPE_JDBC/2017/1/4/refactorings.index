@@ -1,0 +1,11 @@
+1485358932668	Rename type 'Ihm'
+1485358945718	Rename type 'IIhm'
+1485440123819	Delete element
+1485444328429	Rename type 'IAcademie'
+1485444469808	Rename type 'Academie'
+1485444744333	Rename type 'IAdministrateur'
+1485444761000	Rename type 'Administrateur'
+1485445828902	Rename type 'AdministrateurDTO'
+1485445843170	Rename type 'AcademieDTO'
+1485445854255	Rename type 'Academie1DTO'
+1485445893747	Encapsulate field 'nom'

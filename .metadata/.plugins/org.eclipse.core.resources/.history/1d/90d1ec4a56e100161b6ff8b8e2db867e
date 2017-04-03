@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package fr.imie.business;
+
+/**
+ * @author imiedev
+ *
+ */
+public class Affichage {
+	
+	printAreaOf(rectangle);
+	printPerimeterOf(rectangle);
+
+}

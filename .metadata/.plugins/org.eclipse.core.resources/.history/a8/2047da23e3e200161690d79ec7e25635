@@ -1,0 +1,31 @@
+package fr.imie;
+
+import fr.imie.business.AcademicBusiness;
+import fr.imie.business.IAcademicBusiness;
+import fr.imie.model.EtablissementDTO;
+
+/**
+ * @author imiedev
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		
+		
+		IAcademicBusiness academicBusiness = new AcademicBusiness();
+
+		for (EtablissementDTO etablissementDTO : academicBusiness.listAllEtablissement()) {
+			System.out.format("nom:%s\n", etablissementDTO.getNom());
+			System.out.format("adresse:%s\n", etablissementDTO.getAdresse().getMergedAdress());
+		}
+		
+		
+
+	}
+
+}

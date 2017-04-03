@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package fr.imie;
+
+/**
+ * @author imiedev
+ *
+ */
+public interface IShape {
+	
+	public abstract Float area();
+	public abstract Float perimeter();
+	
+
+}

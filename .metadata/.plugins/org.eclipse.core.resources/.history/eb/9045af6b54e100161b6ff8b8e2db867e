@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package fr.imie;
+
+/**
+ * @author imiedev
+ *
+ */
+public class Affichage extends ShapeTest {
+	
+	printAreaOf(rectangle);
+	printPerimeterOf(rectangle);
+
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_yMw4ANyaEeaYnav7N5rwWA" name="TP3">
+  <packageImport xmi:id="_W4DewNycEeaYnav7N5rwWA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:id="_gymxcNyeEeaYnav7N5rwWA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1rxgENybEeaYnav7N5rwWA" name="Pion">
+    <generalization xmi:id="_Zh0WUNycEeaYnav7N5rwWA" general="_QbYWQNycEeaYnav7N5rwWA"/>
+    <ownedOperation xmi:id="_1Bo5wNyiEeaYnav7N5rwWA" name="seDeplacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_46YKENybEeaYnav7N5rwWA" name="Tour">
+    <generalization xmi:id="_aHl84NycEeaYnav7N5rwWA" general="_QbYWQNycEeaYnav7N5rwWA"/>
+    <ownedOperation xmi:id="_5HtXQNyiEeaYnav7N5rwWA" name="seDeplacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-dXRgNybEeaYnav7N5rwWA" name="Cheval">
+    <generalization xmi:id="_a2GBoNycEeaYnav7N5rwWA" general="_QbYWQNycEeaYnav7N5rwWA"/>
+    <ownedOperation xmi:id="_9fFAINyiEeaYnav7N5rwWA" name="seDeplacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AwwQcNycEeaYnav7N5rwWA" name="Fou">
+    <generalization xmi:id="_bTYakNycEeaYnav7N5rwWA" general="_QbYWQNycEeaYnav7N5rwWA"/>
+    <ownedOperation xmi:id="__IoX4NyiEeaYnav7N5rwWA" name="seDeplacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FJWoYNycEeaYnav7N5rwWA" name="Roi">
+    <generalization xmi:id="_bqaagNycEeaYnav7N5rwWA" general="_QbYWQNycEeaYnav7N5rwWA"/>
+    <ownedOperation xmi:id="_AlW0kNyjEeaYnav7N5rwWA" name="seDeplacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NnG30NycEeaYnav7N5rwWA" name="Reine">
+    <generalization xmi:id="_cCaq0NycEeaYnav7N5rwWA" general="_QbYWQNycEeaYnav7N5rwWA"/>
+    <ownedOperation xmi:id="_C40sANyjEeaYnav7N5rwWA" name="seDeplacer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_QbYWQNycEeaYnav7N5rwWA" name="Pièce" isAbstract="true">
+    <ownedAttribute xmi:id="_j8C_4NykEeaYnav7N5rwWA" name="position_Initiale" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j8C_4dykEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j8Dm8NykEeaYnav7N5rwWA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_raQd4NykEeaYnav7N5rwWA" name="position_Echiquier" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_PFR6cNymEeaYnav7N5rwWA" name="seDéplacer" isAbstract="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_eBIaQNycEeaYnav7N5rwWA" name="Plateau">
+    <ownedAttribute xmi:id="_eaqfINydEeaYnav7N5rwWA" name="Longueur" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_earGMNydEeaYnav7N5rwWA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eauJgNydEeaYnav7N5rwWA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7zXMkNyfEeaYnav7N5rwWA" name="Largeur" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7zYasNyfEeaYnav7N5rwWA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7zYasdyfEeaYnav7N5rwWA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_grypsNycEeaYnav7N5rwWA" name="Joueur">
+    <ownedAttribute xmi:id="_FGsjsNyhEeaYnav7N5rwWA" name="Nom" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nTCDcNycEeaYnav7N5rwWA" name="Avoir" memberEnd="_nTCDcdycEeaYnav7N5rwWA _nTCDdNycEeaYnav7N5rwWA" navigableOwnedEnd="_nTCDdNycEeaYnav7N5rwWA">
+    <ownedEnd xmi:id="_nTCDcdycEeaYnav7N5rwWA" name="plateau" type="_eBIaQNycEeaYnav7N5rwWA" association="_nTCDcNycEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nTCDctycEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nTCDc9ycEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_nTCDdNycEeaYnav7N5rwWA" name="pièces" type="_QbYWQNycEeaYnav7N5rwWA" association="_nTCDcNycEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nTCDddycEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nTCDdtycEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_SiErENyeEeaYnav7N5rwWA" name="Case">
+    <ownedAttribute xmi:id="_VCicsNyeEeaYnav7N5rwWA" name="position X" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VCicsdyeEeaYnav7N5rwWA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VCjDwNyeEeaYnav7N5rwWA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MFPVENyfEeaYnav7N5rwWA" name="property2" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MFPVEdyfEeaYnav7N5rwWA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MFPVEtyfEeaYnav7N5rwWA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RhvaANyfEeaYnav7N5rwWA" name="couleur" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RhwBENyfEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RhwBEdyfEeaYnav7N5rwWA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TCnhcNygEeaYnav7N5rwWA" name="Contenir" memberEnd="_TCnhcdygEeaYnav7N5rwWA _TCnhdNygEeaYnav7N5rwWA" navigableOwnedEnd="_TCnhdNygEeaYnav7N5rwWA">
+    <ownedEnd xmi:id="_TCnhcdygEeaYnav7N5rwWA" name="plateau" type="_eBIaQNycEeaYnav7N5rwWA" association="_TCnhcNygEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TCnhctygEeaYnav7N5rwWA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TCnhc9ygEeaYnav7N5rwWA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_TCnhdNygEeaYnav7N5rwWA" name="cases" type="_SiErENyeEeaYnav7N5rwWA" association="_TCnhcNygEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TCnhddygEeaYnav7N5rwWA" value="64"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TCnhdtygEeaYnav7N5rwWA" value="64"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_jA738NyjEeaYnav7N5rwWA" name="Partie">
+    <ownedAttribute xmi:id="_-X3XYNykEeaYnav7N5rwWA" name="joueur_En_Cours" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yXVn8NyoEeaYnav7N5rwWA" memberEnd="_yXVn8dyoEeaYnav7N5rwWA _yXYEMNyoEeaYnav7N5rwWA" navigableOwnedEnd="_yXYEMNyoEeaYnav7N5rwWA">
+    <ownedEnd xmi:id="_yXVn8dyoEeaYnav7N5rwWA" name="joueurs" type="_grypsNycEeaYnav7N5rwWA" association="_yXVn8NyoEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yXW2ENyoEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yXXdINyoEeaYnav7N5rwWA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_yXYEMNyoEeaYnav7N5rwWA" name="parties" type="_jA738NyjEeaYnav7N5rwWA" aggregation="composite" association="_yXVn8NyoEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yXYrQNyoEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yXZSUNyoEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0-DykNyoEeaYnav7N5rwWA" memberEnd="_0-EZoNyoEeaYnav7N5rwWA _0-IrENyoEeaYnav7N5rwWA" navigableOwnedEnd="_0-IrENyoEeaYnav7N5rwWA">
+    <ownedEnd xmi:id="_0-EZoNyoEeaYnav7N5rwWA" name="joueurs" type="_grypsNycEeaYnav7N5rwWA" association="_0-DykNyoEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0-Hc8NyoEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0-IEANyoEeaYnav7N5rwWA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_0-IrENyoEeaYnav7N5rwWA" name="plateaus" type="_eBIaQNycEeaYnav7N5rwWA" aggregation="composite" association="_0-DykNyoEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0-M8gNyoEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0-NjkNyoEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pDj6ANypEeaYnav7N5rwWA" memberEnd="_pDj6AdypEeaYnav7N5rwWA _pDj6BNypEeaYnav7N5rwWA" navigableOwnedEnd="_pDj6AdypEeaYnav7N5rwWA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:id="_pDj6AdypEeaYnav7N5rwWA" name="cases" type="_SiErENyeEeaYnav7N5rwWA" association="_pDj6ANypEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pDj6AtypEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pDj6A9ypEeaYnav7N5rwWA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_pDj6BNypEeaYnav7N5rwWA" name="pièces" type="_QbYWQNycEeaYnav7N5rwWA" association="_pDj6ANypEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pDj6BdypEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pDj6BtypEeaYnav7N5rwWA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_L4TrUNyqEeaYnav7N5rwWA" name="Couleur" memberEnd="_L4ZK4NyqEeaYnav7N5rwWA _L4f4kdyqEeaYnav7N5rwWA" navigableOwnedEnd="_L4ZK4NyqEeaYnav7N5rwWA _L4f4kdyqEeaYnav7N5rwWA">
+    <ownedAttribute xmi:id="_Qel58NyqEeaYnav7N5rwWA" name="couleur" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QemhANyqEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QenIENyqEeaYnav7N5rwWA" value="1"/>
+    </ownedAttribute>
+    <ownedEnd xmi:id="_L4ZK4NyqEeaYnav7N5rwWA" name="joueurs" type="_grypsNycEeaYnav7N5rwWA" association="_L4TrUNyqEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L4fRgNyqEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L4f4kNyqEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_L4f4kdyqEeaYnav7N5rwWA" name="pièces" type="_QbYWQNycEeaYnav7N5rwWA" association="_L4TrUNyqEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L4hGsNyqEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L4lYINyqEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

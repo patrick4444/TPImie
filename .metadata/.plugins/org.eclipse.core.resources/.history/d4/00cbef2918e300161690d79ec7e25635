@@ -1,0 +1,11 @@
+package fr.imie.IHM;
+
+import java.util.List;
+
+import fr.imie.model.EtablissementDTO;
+
+public interface IPresentation {
+
+	public abstract void start();
+
+}

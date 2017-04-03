@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zVoCsPdjEeaBo8nPNUMydA" name="NewModel">
+  <packagedElement xmi:type="uml:Interface" xmi:id="_z4TcgPdkEeaBo8nPNUMydA" name="EnvoiMessageService">
+    <ownedOperation xmi:id="_2_mkoPdkEeaBo8nPNUMydA" name="envoiMessage">
+      <ownedParameter xmi:id="_8emj8PdkEeaBo8nPNUMydA" name="msg"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8R98gPdsEeaBo8nPNUMydA" name="EmServiceImpl"/>
+</uml:Model>

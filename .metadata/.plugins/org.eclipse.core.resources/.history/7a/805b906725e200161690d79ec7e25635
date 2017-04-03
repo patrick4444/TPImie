@@ -1,0 +1,50 @@
+/**
+ * 
+ */
+package fr.imie;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+/**
+ * @author imiedev
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Connection connection;
+		Statement statement;
+		ResultSet resultSet;
+				
+		try {
+			connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/FCPE");
+			String selectAllEtablissementQuery = "select nom from etalissement";
+			statement = connection.createStatement();
+			resultSet = statement.executeQuery(selectAllEtablissementQuery);
+			while (resultSet.next()) {
+				System.out.println(resultSet.getString("nom"));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				if(resultSet!=null && !resultSet.isClosed()){ resultSet.close();}
+
+				if(statement!=null && !statement.isClosed()){statement.close();}
+
+				if(connection!=null && !connection.isClosed()){connection.close();}
+			}
+		}
+		
+
+	}
+
+}

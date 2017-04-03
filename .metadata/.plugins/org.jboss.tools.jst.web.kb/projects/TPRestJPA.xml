@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/home/imiedev/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.asm/2.6.4/org.eclipse.persistence.asm-2.6.4.jar"/>
+  <path value="/home/imiedev/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.antlr/2.6.4/org.eclipse.persistence.antlr-2.6.4.jar"/>
+  <path value="/home/imiedev/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.jpa.jpql/2.6.4/org.eclipse.persistence.jpa.jpql-2.6.4.jar"/>
+  <path value="/home/imiedev/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.jpa/2.6.4/org.eclipse.persistence.jpa-2.6.4.jar"/>
+  <path value="/home/imiedev/.m2/repository/org/eclipse/persistence/org.eclipse.persistence.core/2.6.4/org.eclipse.persistence.core-2.6.4.jar"/>
+  <path value="/home/imiedev/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar"/>
+  <path value="/home/imiedev/.m2/repository/org/postgresql/postgresql/9.4.1212/postgresql-9.4.1212.jar"/>
+  <path value="/home/imiedev/.m2/repository/org/eclipse/persistence/javax.persistence/2.1.1/javax.persistence-2.1.1.jar"/>
+ </paths>
+ <includes/>
+ <aliases/>
+ <uris/>
+</kb-project>

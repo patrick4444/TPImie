@@ -1,0 +1,164 @@
+import java.util.HashSet;
+
+/*******************************************************************************
+ * 2017, All rights reserved.
+ *******************************************************************************/
+
+// Start of user code (user defined imports)
+
+// End of user code
+
+/**
+ * Description of Employe.
+ * 
+ * @author imiedev
+ */
+public class Employe {
+	/**
+	 * Description of the property formations.
+	 */
+	public HashSet<Formation> formations = new HashSet<Formation>();
+
+	/**
+	 * Description of the property telephone.
+	 */
+	private String telephone;
+
+	/**
+	 * Description of the property salaire.
+	 */
+	private float salaire;
+
+	/**
+	 * Description of the property missions.
+	 */
+	public HashSet<Mission> missions = new HashSet<Mission>();
+
+	/**
+	 * Description of the property nom.
+	 */
+	private String nom;
+
+	/**
+	 * Description of the property prenom.
+	 */
+	private String prenom;
+
+	/**
+	 * Description of the property adresse.
+	 */
+	private String adresse;
+	
+	// Start of user code (user defined attributes for Employe)
+	
+	// End of user code
+
+	/**
+	 * The constructor.
+	 */
+	public Employe() {
+		// Start of user code constructor for Employe)
+		super();
+		// End of user code
+	}
+
+	// Start of user code (user defined methods for Employe)
+
+	// End of user code
+	/**
+	 * Returns formations.
+	 * @return formations 
+	 */
+	public HashSet<Formation> getFormations() {
+		return this.formations;
+	}
+
+	/**
+	 * Returns telephone.
+	 * @return telephone 
+	 */
+	public Object getTelephone() {
+		return this.telephone;
+	}
+
+	/**
+	 * Sets a value to attribute telephone. 
+	 * @param newTelephone 
+	 */
+	public void setTelephone(Object newTelephone) {
+		this.telephone = newTelephone;
+	}
+
+	/**
+	 * Returns salaire.
+	 * @return salaire 
+	 */
+	public Object getSalaire() {
+		return this.salaire;
+	}
+
+	/**
+	 * Sets a value to attribute salaire. 
+	 * @param newSalaire 
+	 */
+	public void setSalaire(Object newSalaire) {
+		this.salaire = newSalaire;
+	}
+
+	/**
+	 * Returns missions.
+	 * @return missions 
+	 */
+	public HashSet<Mission> getMissions() {
+		return this.missions;
+	}
+
+	/**
+	 * Returns nom.
+	 * @return nom 
+	 */
+	public Object getNom() {
+		return this.nom;
+	}
+
+	/**
+	 * Sets a value to attribute nom. 
+	 * @param newNom 
+	 */
+	public void setNom(Object newNom) {
+		this.nom = newNom;
+	}
+
+	/**
+	 * Returns prenom.
+	 * @return prenom 
+	 */
+	public Object getPrenom() {
+		return this.prenom;
+	}
+
+	/**
+	 * Sets a value to attribute prenom. 
+	 * @param newPrenom 
+	 */
+	public void setPrenom(Object newPrenom) {
+		this.prenom = newPrenom;
+	}
+
+	/**
+	 * Returns adresse.
+	 * @return adresse 
+	 */
+	public Object getAdresse() {
+		return this.adresse;
+	}
+
+	/**
+	 * Sets a value to attribute adresse. 
+	 * @param newAdresse 
+	 */
+	public void setAdresse(Object newAdresse) {
+		this.adresse = newAdresse;
+	}
+
+}

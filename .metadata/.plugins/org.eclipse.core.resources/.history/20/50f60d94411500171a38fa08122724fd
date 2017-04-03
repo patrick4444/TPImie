@@ -1,0 +1,73 @@
+/*******************************************************************************
+ * 2017, All rights reserved.
+ *******************************************************************************/
+
+// Start of user code (user defined imports)
+
+// End of user code
+
+/**
+ * Description of Formation.
+ * 
+ * @author imiedev
+ */
+public class Formation {
+	/**
+	 * Description of the property theme.
+	 */
+	private String theme;
+
+	/**
+	 * Description of the property nbre_jours.
+	 */
+	private Integer nbre_jours ;
+	
+	// Start of user code (user defined attributes for Formation)
+	
+	// End of user code
+
+	/**
+	 * The constructor.
+	 */
+	public Formation() {
+		// Start of user code constructor for Formation)
+		super();
+		// End of user code
+	}
+
+	// Start of user code (user defined methods for Formation)
+
+	// End of user code
+	/**
+	 * Returns theme.
+	 * @return theme 
+	 */
+	public Object getTheme() {
+		return this.theme;
+	}
+
+	/**
+	 * Sets a value to attribute theme. 
+	 * @param newTheme 
+	 */
+	public void setTheme(Object newTheme) {
+		this.theme = newTheme;
+	}
+
+	/**
+	 * Returns nbre_jours.
+	 * @return nbre_jours 
+	 */
+	public Object getNbre_jours() {
+		return this.nbre_jours;
+	}
+
+	/**
+	 * Sets a value to attribute nbre_jours. 
+	 * @param newNbre_jours 
+	 */
+	public void setNbre_jours(Object newNbre_jours) {
+		this.nbre_jours = newNbre_jours;
+	}
+
+}

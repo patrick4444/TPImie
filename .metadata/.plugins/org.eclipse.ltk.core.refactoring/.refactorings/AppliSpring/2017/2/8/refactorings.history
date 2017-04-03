@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;PersonController.java&apos; to &apos;model&apos;&#x0A;- Original project: &apos;AppliSpring&apos;&#x0A;- Destination element: &apos;model&apos;&#x0A;- Original element: &apos;fr.imie.cours.PersonController.java&apos;" description="Copy compilation unit" element1="/src\/main\/java&lt;fr.imie.cours{PersonController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1487770406068" target="/AppCDI13/fr.imie.cours/fr/imie/cours/contact/model" units="1" version="1.0"/>
+</session>

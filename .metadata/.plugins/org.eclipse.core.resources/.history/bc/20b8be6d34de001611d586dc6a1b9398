@@ -1,0 +1,22 @@
+package fr.imie;
+
+public class Livre {
+	private String nom;
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	@Override
+	public String toString() {
+		// en dessous, ce qui est généré par l'override
+		//return super.toString();
+		return this.nom;
+	}
+	
+	
+}

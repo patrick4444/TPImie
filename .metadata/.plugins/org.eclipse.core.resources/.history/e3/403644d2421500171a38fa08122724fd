@@ -1,0 +1,89 @@
+import java.util.Date;
+import java.util.HashSet;
+
+/*******************************************************************************
+ * 2017, All rights reserved.
+ *******************************************************************************/
+
+// Start of user code (user defined imports)
+
+// End of user code
+
+/**
+ * Description of Mission.
+ * 
+ * @author imiedev
+ */
+public class Mission {
+	/**
+	 * Description of the property date_fin.
+	 */
+	private Date date_fin ;
+
+	/**
+	 * Description of the property date_debut.
+	 */
+	private Date date_debut ;
+
+	/**
+	 * Description of the property employés.
+	 */
+	public HashSet<Employe> employés = new HashSet<Employe>();
+
+	// Start of user code (user defined attributes for Mission)
+
+	// End of user code
+
+	/**
+	 * The constructor.
+	 */
+	public Mission() {
+		// Start of user code constructor for Mission)
+		super();
+		// End of user code
+	}
+
+	// Start of user code (user defined methods for Mission)
+
+	// End of user code
+	/**
+	 * Returns date_fin.
+	 * @return date_fin 
+	 */
+	public Object getDate_fin() {
+		return this.date_fin;
+	}
+
+	/**
+	 * Sets a value to attribute date_fin. 
+	 * @param newDate_fin 
+	 */
+	public void setDate_fin(Object newDate_fin) {
+		this.date_fin = date_fin;
+	}
+
+	/**
+	 * Returns date_debut.
+	 * @return date_debut 
+	 */
+	public Object getDate_debut() {
+		return this.date_debut;
+	}
+
+	/**
+	 * Sets a value to attribute date_debut. 
+	 * @param newDate_debut 
+	 */
+	public void setDate_debut(Object newDate_debut) {
+		this.date_debut = date_debut;
+	}
+
+	/**
+	 * Returns employés.
+	 * @return employés 
+	 */
+	public HashSet<Employe> getEmployés() {
+		return this.employés;
+	}
+
+}

@@ -1,0 +1,17 @@
+package fr.imie;
+
+import java.util.Date;
+
+public class Emprunt {
+	private String date;
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+	
+
+}

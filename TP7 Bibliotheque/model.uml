@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8yoiEN1sEeaX6be0TdlrVw" name="TP7">
+  <packageImport xmi:id="_uwmVQN1tEeaX6be0TdlrVw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wC_xQN1tEeaX6be0TdlrVw" name="Bibliothèque">
+    <ownedAttribute xmi:id="_yR21gN1tEeaX6be0TdlrVw" name="nomBibliothèque" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3diQMN1tEeaX6be0TdlrVw" name="adresseBibliotheque" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_C8BswN1uEeaX6be0TdlrVw" name="InterfaceBibliothèque"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PHWaIN1uEeaX6be0TdlrVw" name="Personne">
+    <ownedAttribute xmi:id="_RGr0oN1uEeaX6be0TdlrVw" name="nomPersonne" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RGsbsN1uEeaX6be0TdlrVw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RGsbsd1uEeaX6be0TdlrVw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UUQj4N1uEeaX6be0TdlrVw" name="prenomPersonne" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jtO5AN1uEeaX6be0TdlrVw" name="adressePersonne" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_tK4fMN1uEeaX6be0TdlrVw" name="telephonePersonne" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_zDQn0N1uEeaX6be0TdlrVw" name="InterfacePersonne"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9J2dUN1uEeaX6be0TdlrVw" name="employés" memberEnd="_9J2dUd1uEeaX6be0TdlrVw _9J2dVN1uEeaX6be0TdlrVw" navigableOwnedEnd="_9J2dUd1uEeaX6be0TdlrVw _9J2dVN1uEeaX6be0TdlrVw">
+    <ownedEnd xmi:id="_9J2dUd1uEeaX6be0TdlrVw" name="bibliothèques" type="_wC_xQN1tEeaX6be0TdlrVw" association="_9J2dUN1uEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9J2dUt1uEeaX6be0TdlrVw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9J2dU91uEeaX6be0TdlrVw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_9J2dVN1uEeaX6be0TdlrVw" name="personnes" type="_PHWaIN1uEeaX6be0TdlrVw" association="_9J2dUN1uEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9J2dVd1uEeaX6be0TdlrVw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9J2dVt1uEeaX6be0TdlrVw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_O0nO4N1vEeaX6be0TdlrVw" name="adhérents" memberEnd="_O0nO4d1vEeaX6be0TdlrVw _O0nO5N1vEeaX6be0TdlrVw" navigableOwnedEnd="_O0nO4d1vEeaX6be0TdlrVw _O0nO5N1vEeaX6be0TdlrVw">
+    <ownedEnd xmi:id="_O0nO4d1vEeaX6be0TdlrVw" name="bibliothèques" type="_wC_xQN1tEeaX6be0TdlrVw" association="_O0nO4N1vEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0nO4t1vEeaX6be0TdlrVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0nO491vEeaX6be0TdlrVw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_O0nO5N1vEeaX6be0TdlrVw" name="personnes" type="_PHWaIN1uEeaX6be0TdlrVw" association="_O0nO4N1vEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O0nO5d1vEeaX6be0TdlrVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O0nO5t1vEeaX6be0TdlrVw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sCooQN1vEeaX6be0TdlrVw" name="Catalogue"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4nczsN1vEeaX6be0TdlrVw" name="Livre">
+    <ownedAttribute xmi:id="_8qEUkN1vEeaX6be0TdlrVw" name="nomLivre" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ANU_8N1wEeaX6be0TdlrVw" name="ISBN" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hM0f0N1wEeaX6be0TdlrVw" name="numéroExemplaire">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JwXccN1wEeaX6be0TdlrVw" name="constitue" memberEnd="_JwXccd1wEeaX6be0TdlrVw _JwXcdN1wEeaX6be0TdlrVw" navigableOwnedEnd="_JwXccd1wEeaX6be0TdlrVw _JwXcdN1wEeaX6be0TdlrVw">
+    <ownedEnd xmi:id="_JwXccd1wEeaX6be0TdlrVw" name="catalogues" type="_sCooQN1vEeaX6be0TdlrVw" association="_JwXccN1wEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JwXcct1wEeaX6be0TdlrVw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JwXcc91wEeaX6be0TdlrVw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_JwXcdN1wEeaX6be0TdlrVw" name="livres" type="_4nczsN1vEeaX6be0TdlrVw" association="_JwXccN1wEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JwYDgN1wEeaX6be0TdlrVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JwYDgd1wEeaX6be0TdlrVw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_KUXhYN1wEeaX6be0TdlrVw" name="détient" memberEnd="_KUXhYd1wEeaX6be0TdlrVw _KUXhZN1wEeaX6be0TdlrVw" navigableOwnedEnd="_KUXhYd1wEeaX6be0TdlrVw _KUXhZN1wEeaX6be0TdlrVw">
+    <ownedEnd xmi:id="_KUXhYd1wEeaX6be0TdlrVw" name="bibliothèques" type="_wC_xQN1tEeaX6be0TdlrVw" association="_KUXhYN1wEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KUXhYt1wEeaX6be0TdlrVw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KUXhY91wEeaX6be0TdlrVw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_KUXhZN1wEeaX6be0TdlrVw" name="catalogues" type="_sCooQN1vEeaX6be0TdlrVw" association="_KUXhYN1wEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KUXhZd1wEeaX6be0TdlrVw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KUXhZt1wEeaX6be0TdlrVw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_KyN7AN1wEeaX6be0TdlrVw" name="InterfaceCatalogue"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_OCupgN1wEeaX6be0TdlrVw" name="InterfaceLivre"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oqUzMN1wEeaX6be0TdlrVw" name="Auteur">
+    <ownedAttribute xmi:id="_qahlgN1wEeaX6be0TdlrVw" name="nomAuteur" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5qo5kN1wEeaX6be0TdlrVw" name="Emprunt">
+    <ownedAttribute xmi:id="_9WNzcN1wEeaX6be0TdlrVw" name="numeroEmprunt" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_DnbS0N1xEeaX6be0TdlrVw" name="dateEmprunt" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_H3jrQN1xEeaX6be0TdlrVw" name="typeEtat" visibility="private"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_S9fd4N1xEeaX6be0TdlrVw" name="InterfaceAuteur"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_W3eAIN1xEeaX6be0TdlrVw" name="InterfaceEmprunt"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bumHIN1xEeaX6be0TdlrVw" name="adhérents" memberEnd="_bumHId1xEeaX6be0TdlrVw _bumHJN1xEeaX6be0TdlrVw" navigableOwnedEnd="_bumHId1xEeaX6be0TdlrVw _bumHJN1xEeaX6be0TdlrVw">
+    <ownedEnd xmi:id="_bumHId1xEeaX6be0TdlrVw" name="personnes" type="_PHWaIN1uEeaX6be0TdlrVw" association="_bumHIN1xEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bumHIt1xEeaX6be0TdlrVw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bumHI91xEeaX6be0TdlrVw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_bumHJN1xEeaX6be0TdlrVw" name="emprunts" type="_5qo5kN1wEeaX6be0TdlrVw" association="_bumHIN1xEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bumHJd1xEeaX6be0TdlrVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bumHJt1xEeaX6be0TdlrVw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cS9YcN1xEeaX6be0TdlrVw" name="emprunte" memberEnd="_cS9Ycd1xEeaX6be0TdlrVw _cS9YdN1xEeaX6be0TdlrVw" navigableOwnedEnd="_cS9Ycd1xEeaX6be0TdlrVw _cS9YdN1xEeaX6be0TdlrVw">
+    <ownedEnd xmi:id="_cS9Ycd1xEeaX6be0TdlrVw" name="livres" type="_4nczsN1vEeaX6be0TdlrVw" association="_cS9YcN1xEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cS9Yct1xEeaX6be0TdlrVw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cS9Yc91xEeaX6be0TdlrVw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_cS9YdN1xEeaX6be0TdlrVw" name="emprunts" type="_5qo5kN1wEeaX6be0TdlrVw" association="_cS9YcN1xEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cS9Ydd1xEeaX6be0TdlrVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cS9Ydt1xEeaX6be0TdlrVw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_qSOIoN1xEeaX6be0TdlrVw" name="typeEtat"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aH5ZoN1yEeaX6be0TdlrVw" name="ecrit" memberEnd="_aH8c8N1yEeaX6be0TdlrVw _aIDKoN1yEeaX6be0TdlrVw" navigableOwnedEnd="_aIDKoN1yEeaX6be0TdlrVw">
+    <ownedEnd xmi:id="_aH8c8N1yEeaX6be0TdlrVw" name="livres" type="_4nczsN1vEeaX6be0TdlrVw" association="_aH5ZoN1yEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aH_gQN1yEeaX6be0TdlrVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aIB8gN1yEeaX6be0TdlrVw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_aIDKoN1yEeaX6be0TdlrVw" name="auteurs" type="_oqUzMN1wEeaX6be0TdlrVw" aggregation="shared" association="_aH5ZoN1yEeaX6be0TdlrVw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aIFm4N1yEeaX6be0TdlrVw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aIGN8N1yEeaX6be0TdlrVw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,16 @@
+package fr.imie.cours;
+
+import java.io.Serializable;
+import javax.persistence.*;
+
+/**
+ * Entity implementation class for Entity: User
+ *
+ */
+@Entity
+
+public class User  {
+
+	@Id
+	private Integer id;
+}

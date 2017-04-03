@@ -1,0 +1,23 @@
+package fr.imie;
+
+public class Emprunt {
+	private String date;
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		//return super.toString();
+		return this.date;
+	}
+	
+	
+
+}

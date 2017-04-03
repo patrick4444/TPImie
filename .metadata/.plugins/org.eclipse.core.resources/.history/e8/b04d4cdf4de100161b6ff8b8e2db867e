@@ -1,0 +1,67 @@
+/**
+ * 
+ */
+package fr.imie;
+
+/**
+ * @author imiedev
+ *
+ */
+public class ShapeTest implements IShapeTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Float[] dimensions = {10f,10f};
+		Rectangle rectangle = new Rectangle(dimensions);
+		printAreaOf(rectangle);
+		printPerimeterOf(rectangle);
+
+		/*Circle circle = new Circle(10f);
+		printAreaOf(circle);
+		printPerimeterOf(circle);
+
+		Square square = new Square(5f);
+		printAreaOf(square);
+		printPerimeterOf(square);
+		Triangle triangle = null;
+		try {
+			triangle = new Triangle(5f, 10f, 12f);
+		} catch (IllegalArgumentException e) {
+			System.out.format("le triangle n'a pas pu etre créé : %S\n", e.getMessage());
+		}
+		if (triangle != null) {
+			printAreaOf(triangle);
+			printPerimeterOf(triangle);
+		}
+
+		Polygon polygon = new Polygon(10000, 10f);
+		printAreaOf(polygon);
+		printPerimeterOf(polygon);
+		*/
+	}
+
+	public static void printAreaOf(Shape shape) {
+		System.out.format("L'aire de mon %S est de %S\n", shape.getClass().getSimpleName(), shape.area());
+
+	}
+
+	public static void printPerimeterOf(Shape shape) {
+		System.out.format("Le périmètre de mon %S est de %S\n", shape.getClass().getSimpleName(), shape.perimeter());
+
+	}
+
+	@Override
+	public Float area() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Float perimeter() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

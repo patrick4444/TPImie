@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_I4FHsNv-EeawJ6BgJR6qDg" name="TP2">
+  <packageImport xmi:id="_noTzUNwBEea0Av1MXGVWZQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_kzN84Nv-EeawJ6BgJR6qDg" name="Feutre">
+    <generalization xmi:id="_FE_eUNwDEea0Av1MXGVWZQ" general="_4g5hENwBEea0Av1MXGVWZQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-8m1sNwAEea0Av1MXGVWZQ" name="Stylo">
+    <generalization xmi:id="_ImMUMNwDEea0Av1MXGVWZQ" general="_4g5hENwBEea0Av1MXGVWZQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4g5hENwBEea0Av1MXGVWZQ" name="Crayon">
+    <ownedAttribute xmi:id="_cxo50NwDEea0Av1MXGVWZQ" name="Couleur">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_mgrvkNyTEeaYnav7N5rwWA" name="ecrire">
+      <ownedParameter xmi:id="_szBQUNyTEeaYnav7N5rwWA" name="papier"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_6D00gNySEeaYnav7N5rwWA" name="Personne"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_We2DoNyTEeaYnav7N5rwWA" name="Ecrit avec" memberEnd="_We2qsNyTEeaYnav7N5rwWA _WfAbsdyTEeaYnav7N5rwWA" navigableOwnedEnd="_WfAbsdyTEeaYnav7N5rwWA">
+    <ownedEnd xmi:id="_We2qsNyTEeaYnav7N5rwWA" name="personnes" type="_6D00gNySEeaYnav7N5rwWA" association="_We2DoNyTEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_We_NkNyTEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WfAbsNyTEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_WfAbsdyTEeaYnav7N5rwWA" name="crayons" type="_4g5hENwBEea0Av1MXGVWZQ" association="_We2DoNyTEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WfGiUNyTEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WfHJYNyTEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_RDjqMNyUEeaYnav7N5rwWA" name="Papier"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Uil84NyUEeaYnav7N5rwWA" name="Ecrit sur" memberEnd="_Uimj8NyUEeaYnav7N5rwWA _UioZINyUEeaYnav7N5rwWA" navigableOwnedEnd="_UioZINyUEeaYnav7N5rwWA">
+    <ownedEnd xmi:id="_Uimj8NyUEeaYnav7N5rwWA" name="personnes" type="_6D00gNySEeaYnav7N5rwWA" association="_Uil84NyUEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UinLANyUEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UinyENyUEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_UioZINyUEeaYnav7N5rwWA" name="papiers" type="_RDjqMNyUEeaYnav7N5rwWA" association="_Uil84NyUEeaYnav7N5rwWA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Uit4sNyUEeaYnav7N5rwWA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UiufwNyUEeaYnav7N5rwWA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>

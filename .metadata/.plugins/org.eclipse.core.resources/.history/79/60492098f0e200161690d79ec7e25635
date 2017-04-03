@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package fr.imie.business;
+
+import java.util.List;
+
+import fr.imie.model.EtablissementDTO;
+import fr.imie.persistence.EtablissementDAO;
+import fr.imie.persistence.IEtablissementDAO;
+
+/**
+ * @author imiedev
+ *
+ */
+public class AcademicBusiness implements IAcademicBusiness {
+
+	private IEtablissementDAO etablissementDAO = new EtablissementDAO();
+
+	/* (non-Javadoc)
+	 * @see fr.imie.business.IBusiness#listAllEtablissement()
+	 */
+	@Override
+	public List<EtablissementDTO> listAllEtablissement() {
+		return etablissementDAO.listAllEtablissement();
+	}
+
+	@Override
+	public void createEtablissement(EtablissementDTO etablissement) {
+		etablissementDAO.createEtablissement(etablissement);
+		
+	}
+
+}

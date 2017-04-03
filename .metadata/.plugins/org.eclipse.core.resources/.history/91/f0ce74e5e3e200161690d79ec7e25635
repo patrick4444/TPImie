@@ -1,0 +1,40 @@
+package fr.imie;
+
+import fr.imie.business.AcademicBusiness;
+import fr.imie.business.IAcademicBusiness;
+import fr.imie.model.AdresseDTO;
+import fr.imie.model.EtablissementDTO;
+
+/**
+ * @author imiedev
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		AdresseDTO adresseDTO = new AdresseDTO();
+		adresseDTO.initDTO(10, "rue Jules Ferry", "44620", "LA MONTAGNE");
+		
+		
+		EtablissementDTO etablissementDTO = new EtablissementDTO();
+		etablissementDTO.initDTO("Jules FERRY", adresseDTO);
+		
+		
+		
+		
+		IAcademicBusiness academicBusiness = new AcademicBusiness();
+
+		for (EtablissementDTO etablissementDTO : academicBusiness.listAllEtablissement()) {
+			System.out.format("nom:%s\n", etablissementDTO.getNom());
+			System.out.format("adresse:%s\n", etablissementDTO.getAdresse().getMergedAdress());
+		}
+		
+		
+
+	}
+
+}
